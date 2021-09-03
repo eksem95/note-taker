@@ -7,7 +7,7 @@
 const htmlRoutes = require("./routes/htmlRoutes");
 const apiRoutes = require("./routes/apiRoutes");
 const express = require('express');
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 var app = express();
 //middleware
 app.use(express.json());
